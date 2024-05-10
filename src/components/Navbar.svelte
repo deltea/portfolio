@@ -1,6 +1,7 @@
 <script lang="ts">
-	import { currentTheme, themes, type Theme } from "$lib/stores.ts";
+	import { currentTheme } from "$lib/stores";
   import { pickRandom } from "$lib/utils";
+  import { themes, type Theme } from "$lib/types";
   import Waves from "$components/Waves.svelte";
 
   function switchTheme() {

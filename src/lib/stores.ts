@@ -1,7 +1,5 @@
 import { writable } from "svelte/store";
-
-export const themes = ["bumblebee", "rust", "bittersweet"] as const;
-export type Theme = (typeof themes)[number];
+import type { Theme } from "$lib/types";
 
 export const currentTheme = writable<Theme>("bumblebee");
 currentTheme.subscribe(value => {

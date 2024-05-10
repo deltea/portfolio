@@ -1,7 +1,8 @@
 ---
-import Navbar from "$components/Navbar.svelte";
 import "@fontsource-variable/figtree";
 import "../styles/global.css";
+import Cover from "$components/Cover.svelte";
+import Navbar from "$components/Navbar.svelte";
 
 interface Props {
 	title?: string;
@@ -25,6 +26,8 @@ const {
     <title>{title}</title>
   </head>
   <body class="min-h-screen text-white bg-black duration-200">
+    <Cover client:load />
+
     <Navbar client:only />
 
     <main class="w-full h-full">
