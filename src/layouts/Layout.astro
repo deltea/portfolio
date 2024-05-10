@@ -1,6 +1,7 @@
 ---
 import Navbar from "$components/Navbar.svelte";
 import "@fontsource-variable/figtree";
+import "../styles/global.css";
 
 interface Props {
 	title?: string;
@@ -14,7 +15,7 @@ const {
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="rust">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
@@ -23,10 +24,10 @@ const {
     <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
     <title>{title}</title>
   </head>
-  <body>
+  <body class="min-h-screen text-white bg-black">
     <Navbar client:load />
 
-    <main class="w-full h-full text-white">
+    <main class="w-full h-full">
       <slot />
     </main>
   </body>

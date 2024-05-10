@@ -1,0 +1,17 @@
+@tailwind base;
+
+@layer base {
+  html[data-theme="bumblebee"] {
+    --color-accent: 237 160 49;
+    --color-dark: 39 41 70;
+    --color-light: 255 255 255;
+  }
+
+  html[data-theme="rust"] {
+    --color-accent: 214 10 64;
+    --color-dark: 87 42 48;
+    --color-light: 252 213 172;
+  }
+
+
+}
