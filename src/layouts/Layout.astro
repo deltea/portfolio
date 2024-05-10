@@ -1,0 +1,33 @@
+---
+import Navbar from "$components/Navbar.svelte";
+import "@fontsource-variable/figtree";
+
+interface Props {
+	title?: string;
+  description?: string;
+}
+
+const {
+  title = "Deltae",
+  description = "My portfolio."
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={description} />
+    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+    <title>{title}</title>
+  </head>
+  <body>
+    <Navbar client:load />
+
+    <main class="w-full h-full text-white">
+      <slot />
+    </main>
+  </body>
+</html>
