@@ -5,6 +5,7 @@ export default {
 		extend: {
       fontFamily: {
         "figtree": ["Figtree Variable", "sans"],
+        "grotesk": ["Space Grotesk Variable", "sans"],
       },
       colors: {
         // This color will be replaced with primary color of theme

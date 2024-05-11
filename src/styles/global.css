@@ -18,4 +18,8 @@
     --color-dark: 197 105 129;
     --color-light: 163 162 154;
   }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
 }
