@@ -10,6 +10,6 @@ import vercel from "@astrojs/vercel/static";
 export default defineConfig({
   site: "https://deltae.vercel.app",
   integrations: [mdx(), sitemap(), tailwind(), svelte()],
-  output: "server",
+  output: "static",
   adapter: vercel({ webAnalytics: true }),
 });
