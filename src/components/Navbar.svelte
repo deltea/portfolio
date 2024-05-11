@@ -15,9 +15,11 @@
     class="size-8 rounded-full duration-150 hover:scale-110 active:scale-100 bg-white"
   ></button>
 
-  <div class="flex items-center gap-8">
+  <div class="flex items-center gap-12">
     <a href="/">home</a>
     <a href="/projects">projects</a>
+    <a href="https://github.com/deltea">github</a>
+    <a href="https://deltea.itch.io">itch.io</a>
   </div>
 
   <button
