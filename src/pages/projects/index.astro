@@ -18,12 +18,16 @@ const posts = (await getCollection("projects")).sort(
 
   <div class="bg-white py-12 px-24 grid grid-cols-3 gap-4">
     {posts.map(post => (
-      <div class="p-6 rounded-[2rem] bg-black text-white font-grotesk space-y-2">
+      <div class="p-6 rounded-[2rem] bg-black text-white font-grotesk space-y-2 group">
         <a
           href={`/projects/${post.slug}`}
-          class="bg-cover rounded-3xl bg-center h-48 w-full block"
-          style={`background-image: url('${post.data.cover}')`}
-        ></a>
+          class="w-full h-48 block bg-white rounded-3xl overflow-hidden"
+        >
+          <div
+            class="bg-cover rounded-3xl bg-center h-full w-full group-hover:scale-105 duration-200 bg-primary"
+            style={`background-image: url('${post.data.cover}')`}
+          ></div>
+        </a>
 
         <div>
           <a
