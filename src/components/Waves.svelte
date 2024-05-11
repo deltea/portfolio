@@ -36,7 +36,7 @@
   <div
     bind:this={waves}
     class={cn("bg-bottom bg-repeat-x w-full bg-primary -scale-100 h-5", className)}
-    style={`background-image: url(\"data:image/svg+xml;utf8,%3Csvg viewBox='0 0 614 200' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cpath fill='rgb(${waveColor})' stroke-width='0' d='M 306 110 C 460.5 110 460.5 0 614 0 L 306 0 L 306 110 Z' %3E%3C/path%3E%3Cpath fill='rgb(${waveColor})' stroke-width='0' d='M 0 0 C 153.5 0 153.5 110 308 110 L 308 110 L 308 0 Z'%3E%3C/path%3E%3C/svg%3E\");`}
+    style={`background-image: url(\"data:image/svg+xml;utf8,%3Csvg viewBox='0 0 614 200' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cpath fill='rgb(${waveColor})' stroke-width='0' d='M 305 110 C 460.5 110 460.5 0 614 0 L 305 0 L 305 110 Z' %3E%3C/path%3E%3Cpath fill='rgb(${waveColor})' stroke-width='0' d='M 0 0 C 153.5 0 153.5 110 309 110 L 309 110 L 309 0 Z'%3E%3C/path%3E%3C/svg%3E\");`}
   />
 {:else if type === "sharp"}
   <div

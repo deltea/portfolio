@@ -4,7 +4,7 @@
   html[data-theme="bumblebee"] {
     --color-primary: 237 160 49;
     --color-dark: 39 41 70;
-    --color-light: 255 255 255;
+    --color-light: 231 255 238;
   }
 
   html[data-theme="rust"] {
@@ -14,8 +14,8 @@
   }
 
   html[data-theme="bittersweet"] {
-    --color-primary: 40 35 40;
-    --color-dark: 197 105 129;
+    --color-primary: 197 105 129;
+    --color-dark: 40 35 40;
     --color-light: 163 162 154;
   }
 

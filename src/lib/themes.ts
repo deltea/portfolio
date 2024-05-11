@@ -5,7 +5,7 @@ export const themes: Theme[] = [
     name: "bumblebee",
     primary: "237 160 49",
     dark: "39 41 70",
-    light: "255 255 255",
+    light: "231 255 238",
   },
   {
     name: "rust",
@@ -15,8 +15,8 @@ export const themes: Theme[] = [
   },
   {
     name: "bittersweet",
-    primary: "40 35 40",
-    dark: "197 105 129",
+    primary: "197 105 129",
+    dark: "40 35 40",
     light: "163 162 154",
   }
 ];
