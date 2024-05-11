@@ -25,7 +25,8 @@ const {
     <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
     <title>{title}</title>
   </head>
-  <body class="min-h-screen text-white bg-black duration-150">
+
+  <body class="min-h-screen text-white bg-black duration-150 selection:bg-black">
     <Cover client:load />
 
     <Navbar client:only="svelte" />
