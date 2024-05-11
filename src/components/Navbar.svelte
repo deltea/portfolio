@@ -12,8 +12,8 @@
   }
 </script>
 
-<div class="fixe top0 w-full">
-  <nav class="w-full flex items-center justify-between bg-primary text-white px-8 font-grotesk font-semibold pt-6 pb-4">
+<div class="fixe top-0 w-full">
+  <nav class="w-full flex items-center justify-between bg-primary text-white px-8 font-grotesk font-semibold pt-6 pb-4 selection:bg-black">
     <a
       href="/"
       class="size-8 duration-200 hover:scale-110 active:scale-100 flex justify-center items-center"

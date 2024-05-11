@@ -5,7 +5,7 @@ import Layout from "$layouts/Layout.astro"
 import { getCollection } from "astro:content";
 
 const posts = (await getCollection("projects")).sort(
-	(a, b) => a.data.date.valueOf() - b.data.date.valueOf()
+	(a, b) => b.data.date.valueOf() - a.data.date.valueOf()
 );
 ---
 
@@ -22,7 +22,7 @@ const posts = (await getCollection("projects")).sort(
         <a
           href={`/projects/${post.slug}`}
           class="bg-cover rounded-3xl bg-center h-48 w-full block"
-          style={`background-image: url('${post.data.hero}')`}
+          style={`background-image: url('${post.data.cover}')`}
         ></a>
 
         <div>
@@ -32,10 +32,10 @@ const posts = (await getCollection("projects")).sort(
           >
             {post.data.title}
           </a>
-          <h3 class="text-sm flex gap-1 items-center">
+          <h3 class="text-sm flex gap-2 items-center">
             {post.data.itch && <a href={post.data.itch} class="underline">play on itch.io</a>}
-            {(post.data.itch && post.data.github) && <span>|</span>}
-            {post.data.github && <a href={post.data.github} class="underline">view source</a>}
+            {(post.data.itch && post.data.github) && <span class="border h-4 border-white" />}
+            {post.data.github && <a href={post.data.github} class="underline">source code</a>}
           </h3>
         </div>
       </div>

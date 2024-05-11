@@ -1,7 +1,8 @@
 ---
 title: "Power Cut"
 date: "April 23 2024"
-hero: "/heros/power-cut.gif"
+cover: "/covers/power-cut.gif"
+hero: "/heros/power-cut.png"
 github: "https://github.com/deltea/power-cut"
 itch: "https://deltea.itch.io/power-cut"
 ---

@@ -1,5 +1,8 @@
 ---
+import Layout from "$layouts/Layout.astro";
 import { type CollectionEntry, getCollection } from "astro:content";
+import Waves from "$components/Waves.svelte";
+import { formatDate } from "$lib/utils";
 
 export async function getStaticPaths() {
 	const posts = await getCollection("projects");
@@ -13,3 +16,42 @@ type Props = CollectionEntry<"projects">;
 const post = Astro.props;
 const { Content } = await post.render();
 ---
+
+<Layout title={post.data.title}>
+  <div class="flex items-center justify-center">
+    <div class="flex flex-col gap-12 justify-center items-center w-[44rem] py-12 text-white text-3xl bg-black font-grotesk">
+      <div class="space-y-4 text-center">
+        <div>
+          <h1 class="font-bold text-4xl">{post.data.title}</h1>
+          <h2 class="text-lg">{formatDate(post.data.date)}</h2>
+        </div>
+        <h2 class="flex justify-center items-center gap-2 text-sm">
+          {post.data.itch && <a href={post.data.itch} class="underline">play on itch.io</a>}
+          {(post.data.itch && post.data.github) && <span class="border h-4 border-white" />}
+          {post.data.github && <a href={post.data.github} class="underline">view source code</a>}
+        </h2>
+      </div>
+
+      <img
+        class="rounded-3xl w-full hover:scale-[102%] duration-200"
+        src={post.data.hero}
+        alt={post.data.title}
+      >
+    </div>
+  </div>
+
+  <Waves client:only="svelte" class="bg-dark" color="--color-light" />
+
+  <article class="bg-white text-black p-8">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nesciunt ratione exercitationem tempore repudiandae aperiam asperiores eveniet, quae voluptate officiis. Praesentium sequi eveniet aliquam quisquam ullam beatae adipisci, optio quis.
+    Quas explicabo cum reiciendis veniam alias, exercitationem laborum? Excepturi amet, itaque consequuntur quisquam unde non magni reiciendis distinctio beatae libero illo cum quis similique. Ex culpa molestias deleniti minima quas.
+    Est quia corporis, odio consequatur soluta quam? Doloribus sint facere praesentium quo dolorum, voluptate ducimus exercitationem! Odit, sed voluptatum? Eius doloremque voluptatibus, nisi vitae perspiciatis eveniet voluptas necessitatibus repellat dignissimos.
+    At culpa adipisci velit natus eos porro accusantium sequi ex, sit blanditiis? Ratione aliquam amet, quam molestias culpa harum eos repellat sint, accusantium quidem voluptatum quas. Obcaecati eaque voluptatem corrupti.
+    Vitae veritatis modi a voluptatem sit! Quos aspernatur maxime, suscipit non fuga ab. Illum commodi reiciendis excepturi fugiat ut minus natus, quasi blanditiis ab quos earum fuga et, porro maxime!
+    Quisquam, dolorem ullam itaque doloribus ipsa iste adipisci debitis! Ducimus quos minima molestiae, voluptatibus corporis consequuntur recusandae harum? Nam, dolor est magni asperiores aliquam ipsum minus maiores deleniti illum. Sequi?
+    Ullam ad expedita aperiam natus iusto non nihil optio aut suscipit ipsa aspernatur ratione molestias perspiciatis doloribus, eos minima dignissimos mollitia modi ipsam rem quaerat vero quia magni voluptas. Quis?
+    Quod molestiae esse iste quisquam. Quibusdam perferendis vitae expedita neque distinctio cumque? Quos nostrum amet repellat mollitia placeat, tenetur ea earum iste? Iste ipsam quo perferendis quae sapiente accusantium esse.
+    Corrupti, distinctio harum. Voluptatibus id, recusandae fugiat ipsum sequi labore corrupti alias reiciendis explicabo rerum nihil facere amet rem perspiciatis hic iusto repudiandae. Laborum distinctio repellat minus commodi ipsa tenetur.
+    Tempora cumque explicabo accusamus, laboriosam blanditiis earum delectus omnis saepe sit officiis iure quia rem labore eligendi unde mollitia nobis? Vero voluptate dolores odio itaque assumenda minus, labore voluptates dolorem.
+  </article>
+</Layout>

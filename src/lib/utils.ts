@@ -10,3 +10,12 @@ export function pickRandom<T>(array: T[], exclude: T | null = null): T {
 export function cn(...values: ClassValue[]) {
   return twMerge(clsx(values));
 }
+
+export function formatDate(dateString: string | Date) {
+  const date = new Date(dateString);
+  const day = date.getDate();
+  const month = date.toLocaleDateString("en-US", { month: "short" });
+  const year = date.getFullYear();
+
+  return `${month} ${day} ${year}`;
+}

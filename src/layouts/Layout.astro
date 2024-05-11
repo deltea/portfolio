@@ -27,12 +27,12 @@ const {
     <title>{title}</title>
   </head>
 
-  <body class="min-h-screen text-white bg-black duration-150 selection:bg-black underline-offset-[3px]">
+  <body class="min-h-screen text-white bg-black duration-150 underline-offset-[3px]">
     <Cover client:load />
 
     <Navbar client:only="svelte" />
 
-    <main class="w-full h-full">
+    <main class="w-full h-full selection:bg-primary">
       <slot />
     </main>
   </body>
