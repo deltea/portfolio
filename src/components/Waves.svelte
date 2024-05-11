@@ -11,6 +11,8 @@
   let waveColor: string;
 
   function tick() {
+    if (!waves) return;
+
     waves.style.backgroundPositionX = `${wavePos}px`;
     wavePos += WAVE_SPEED
     requestAnimationFrame(tick);

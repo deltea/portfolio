@@ -14,10 +14,6 @@ export default {
         // This color will be replaced with light color of theme
         "white": "rgb(var(--color-light) / <alpha-value>)",
       },
-      backgroundImage: {
-        "waves": "url('/waves.svg')",
-        "sharp": "url('/sharp.svg')",
-      }
     },
 	},
 	plugins: [],

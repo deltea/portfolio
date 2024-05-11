@@ -1,2 +1,6 @@
-export const themes = ["bumblebee", "rust", "bittersweet"] as const;
-export type Theme = (typeof themes)[number];
+export interface Theme {
+  name: string,
+  light: string,
+  primary: string,
+  dark: string,
+}

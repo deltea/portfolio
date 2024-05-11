@@ -25,10 +25,10 @@ const {
     <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
     <title>{title}</title>
   </head>
-  <body class="min-h-screen text-white bg-black duration-200">
+  <body class="min-h-screen text-white bg-black duration-150">
     <Cover client:load />
 
-    <Navbar client:only />
+    <Navbar client:only="svelte" />
 
     <main class="w-full h-full">
       <slot />

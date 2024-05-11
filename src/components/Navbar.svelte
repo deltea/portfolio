@@ -1,19 +1,20 @@
 <script lang="ts">
 	import { currentTheme } from "$lib/stores";
   import { pickRandom } from "$lib/utils";
-  import { themes, type Theme } from "$lib/types";
+  import { type Theme } from "$lib/types";
   import Waves from "$components/Waves.svelte";
+  import { themes } from "$lib/themes";
 
   function switchTheme() {
-    currentTheme.set(pickRandom<Theme>([...themes], $currentTheme));
+    currentTheme.set(pickRandom<Theme>(themes, $currentTheme));
   }
 </script>
 
 <nav class="w-full flex items-center justify-between bg-primary text-white px-8 font-figtree font-semibold pt-6 pb-4">
-  <button
-    on:click={switchTheme}
-    class="size-8 rounded-full duration-150 hover:scale-110 active:scale-100 bg-white"
-  ></button>
+  <a
+    href="/"
+    class="size-8 rounded-full duration-200 hover:scale-110 active:scale-100 bg-white"
+  > </a>
 
   <div class="flex items-center gap-12">
     <a href="/">home</a>
@@ -24,7 +25,8 @@
 
   <button
     on:click={switchTheme}
-    class="size-8 rounded-full duration-150 hover:scale-110 active:scale-100 bg-white"
+    class="size-9 rounded-full duration-150 hover:scale-110 active:scale-100 border-[5px] border-white"
+    style:background="conic-gradient(rgb({$currentTheme.light}) 120deg, rgb({$currentTheme.dark}) 120deg 240deg, rgb({$currentTheme.primary}) 240deg 360deg)"
   ></button>
 </nav>
 
