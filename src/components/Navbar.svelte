@@ -8,6 +8,7 @@
 
   function switchTheme() {
     currentTheme.set(pickRandom<Theme>(themes, $currentTheme));
+    localStorage.setItem("theme_changed", "yes");
   }
 </script>
 
