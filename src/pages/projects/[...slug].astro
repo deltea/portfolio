@@ -26,9 +26,13 @@ const { Content } = await post.render();
           <h2 class="text-lg">{formatDate(post.data.date)}</h2>
         </div>
         <h2 class="flex justify-center items-center gap-2 text-sm">
-          {post.data.itch && <a href={post.data.itch} class="underline">play on itch.io</a>}
+          {post.data.itch &&
+            <a href={post.data.itch} class="underline hover:text-primary duration-150 hover:selection:bg-white">play on itch.io</a>
+          }
           {(post.data.itch && post.data.github) && <span class="border h-4 border-white" />}
-          {post.data.github && <a href={post.data.github} class="underline">view source code</a>}
+          {post.data.github &&
+            <a href={post.data.github} class="underline hover:text-primary duration-150 hover:selection:bg-white">view source code</a>
+          }
         </h2>
       </div>
 

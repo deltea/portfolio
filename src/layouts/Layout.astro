@@ -23,11 +23,11 @@ const {
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />
-    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon.svg" type="image/x-icon">
     <title>{title}</title>
   </head>
 
-  <body class="min-h-screen text-white bg-black duration-150 underline-offset-[3px]">
+  <body class="min-h-screen text-white bg-black underline-offset-[3px]">
     <Cover client:load />
 
     <Navbar client:only="svelte" />

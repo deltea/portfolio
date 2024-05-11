@@ -24,7 +24,7 @@ const posts = (await getCollection("projects")).sort(
           class="w-full h-48 block bg-white rounded-3xl overflow-hidden"
         >
           <div
-            class="bg-cover rounded-3xl bg-center h-full w-full group-hover:scale-105 duration-200 bg-primary"
+            class="bg-cover rounded-3xl bg-center h-full w-full group-hover:scale-105 duration-150 bg-primary"
             style={`background-image: url('${post.data.cover}')`}
           ></div>
         </a>
@@ -37,9 +37,13 @@ const posts = (await getCollection("projects")).sort(
             {post.data.title}
           </a>
           <h3 class="text-sm flex gap-2 items-center">
-            {post.data.itch && <a href={post.data.itch} class="underline">play on itch.io</a>}
+            {post.data.itch &&
+              <a href={post.data.itch} class="underline hover:text-primary duration-150">play on itch.io</a>
+            }
             {(post.data.itch && post.data.github) && <span class="border h-4 border-white" />}
-            {post.data.github && <a href={post.data.github} class="underline">source code</a>}
+            {post.data.github &&
+              <a href={post.data.github} class="underline hover:text-primary duration-150">source code</a>
+            }
           </h3>
         </div>
       </div>
