@@ -14,7 +14,7 @@ const posts = (await getCollection("projects")).sort(
     my projects
   </div>
 
-  <Waves client:only="svelte" class="bg-dark" color="--color-light" />
+  <Waves client:only="svelte" class="bg-dark" color="--color-light" direction={-1} />
 
   <div class="bg-white py-12 px-24 grid grid-cols-3 gap-4">
     {posts.map(post => (

@@ -4,7 +4,8 @@
   import { onMount } from "svelte";
 
   export let type: "round" | "sharp" = "round";
-  export let waveSpeed = 0.25;
+  export let speed = 0.25;
+  export let direction: -1 | 0 | 1 = 1;
   export let color = "--color-dark";
 
   let className = "";
@@ -18,7 +19,7 @@
     if (!waves) return;
 
     waves.style.backgroundPositionX = `${wavePos}px`;
-    wavePos += waveSpeed;
+    wavePos += speed * direction;
     requestAnimationFrame(tick);
   }
 
