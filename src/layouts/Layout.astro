@@ -4,6 +4,7 @@ import "@fontsource-variable/space-grotesk";
 import "../styles/global.css";
 import Cover from "$components/Cover.svelte";
 import Navbar from "$components/Navbar.svelte";
+import Footer from "$components/Footer.svelte";
 
 interface Props {
 	title?: string;
@@ -27,7 +28,7 @@ const {
     <title>{title}</title>
   </head>
 
-  <body class="min-h-screen text-white bg-black underline-offset-[3px]">
+  <body class="min-h-screen text-white bg-black underline-offset-3">
     <Cover client:load />
 
     <Navbar client:only="svelte" />
@@ -35,5 +36,7 @@ const {
     <main class="w-full h-full selection:bg-primary">
       <slot />
     </main>
+
+    <Footer client:only="svelte" />
   </body>
 </html>

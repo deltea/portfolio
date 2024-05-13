@@ -25,8 +25,6 @@
       <a href="/">home</a>
       <a href="/projects">projects</a>
       <a href="/about">about</a>
-      <a href="https://github.com/deltea">github</a>
-      <a href="https://deltea.itch.io">itch.io</a>
     </div>
 
     <button

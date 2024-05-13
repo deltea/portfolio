@@ -12,4 +12,5 @@ export default defineConfig({
   integrations: [mdx(), sitemap(), tailwind(), svelte()],
   output: "static",
   adapter: vercel({ webAnalytics: true }),
+  devToolbar: { enabled: false },
 });

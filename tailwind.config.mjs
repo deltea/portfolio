@@ -15,7 +15,15 @@ export default {
         // This color will be replaced with light color of theme
         "white": "rgb(var(--color-light) / <alpha-value>)",
       },
+      textUnderlineOffset: {
+        "3": "3px",
+      },
+      spacing: {
+        "content": "44rem",
+      }
     },
 	},
-	plugins: [],
+	plugins: [
+    require("@tailwindcss/typography")
+  ],
 }
