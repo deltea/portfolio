@@ -3,12 +3,12 @@
   import { pickRandom } from "$lib/utils";
   import { type Theme } from "$lib/types";
   import { themes } from "$lib/themes";
-  import Waves from "$components/Waves.svelte";
   import "iconify-icon";
+  import Waves from "$components/Waves.svelte";
 
   function switchTheme() {
     currentTheme.set(pickRandom<Theme>(themes, $currentTheme));
-    localStorage.setItem("theme_changed", "yes");
+    localStorage.setItem("theme", $currentTheme.name);
   }
 </script>
 
