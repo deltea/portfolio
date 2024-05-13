@@ -25,6 +25,7 @@ const { Content } = await post.render();
           <h1 class="font-bold text-4xl">{post.data.title}</h1>
           <h2 class="text-lg">{formatDate(post.data.date)}</h2>
         </div>
+
         <h2 class="flex justify-center items-center gap-2 text-sm">
           {post.data.itch &&
             <a href={post.data.itch} class="underline hover:text-primary duration-150 hover:selection:bg-white">play on itch.io</a>
@@ -44,10 +45,10 @@ const { Content } = await post.render();
     </div>
   </div>
 
-  <Waves client:only="svelte" class="bg-dark" color="--color-light" />
+  <Waves client:only="svelte" direction={-1} class="bg-dark" color="--color-light" />
 
   <div class="bg-white flex justify-center items-center">
-    <article class="w-content bg-white text-black p-8 prose prose-h1:font-grotesk prose-h1:text-black prose-h1:pt-12 prose-neutral max-w-none selection:text-white">
+    <article class="w-content bg-white text-black p-8 prose prose-h1:font-grotesk prose-h1:text-black prose-h1:pt-12 prose-neutral max-w-none selection:text-white pb-16">
       <Content />
     </article>
   </div>
