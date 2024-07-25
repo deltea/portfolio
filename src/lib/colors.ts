@@ -13,7 +13,7 @@ interface Palette {
 
 export const palettes: Palette[] = [
   {
-    name: "catpuccin",
+    name: "catppuccin",
     colors: {
       accent: "#b4befe",
       foreground: "#cdd6f4",
@@ -31,12 +31,12 @@ export const palettes: Palette[] = [
     }
   },
   {
-    name: "ocean",
+    name: "rose pine",
     colors: {
-      accent: "#06aed5",
-      foreground: "#f0f3bd",
-      background: "#1b262c",
-      muted: "#0b3948"
+      accent: "#e1bdba",
+      foreground: "#e0def4",
+      background: "#191724",
+      muted: "#26233a"
     }
   }
 ];

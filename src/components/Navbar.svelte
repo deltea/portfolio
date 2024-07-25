@@ -9,12 +9,14 @@
   </a>
   <a
     href="https://github.com/deltea"
+    target="_blank"
     class="hover:text-accent hover:underline"
   >
     github
   </a>
   <a
     href="https://deltea.itch.io"
+    target="_blank"
     class="hover:text-accent hover:underline"
   >
     itch.io
