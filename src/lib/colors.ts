@@ -15,7 +15,7 @@ export const palettes: Palette[] = [
   {
     name: "catppuccin",
     colors: {
-      accent: "#b4befe",
+      accent: "#dea0ae",
       foreground: "#cdd6f4",
       background: "#1e1e2e",
       muted: "#313244"
@@ -37,6 +37,24 @@ export const palettes: Palette[] = [
       foreground: "#e0def4",
       background: "#191724",
       muted: "#26233a"
+    }
+  },
+  {
+    name: "dracula",
+    colors: {
+      accent: "#ff79c6",
+      foreground: "#f8f8f2",
+      background: "#262130",
+      muted: "#433658"
+    }
+  },
+  {
+    name: "synthwave",
+    colors: {
+      accent: "#c759ac",
+      foreground: "#f7f7fb",
+      background: "#2b213a",
+      muted: "#3c3146"
     }
   }
 ];

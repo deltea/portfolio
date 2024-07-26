@@ -1,26 +1,37 @@
-<nav class="space-x-8 flex justify-center items-center font-bold">
-  <iconify-icon icon="streamline:flower-solid" class="text-base text-muted"></iconify-icon>
-
+<nav class="flex flex-col gap-8 items-center">
   <a
     href="/"
-    class="hover:text-accent hover:underline"
+    class="text-3xl tracking-widest font-bold hover:text-accent"
   >
-    home
-  </a>
-  <a
-    href="https://github.com/deltea"
-    target="_blank"
-    class="hover:text-accent hover:underline"
-  >
-    github
-  </a>
-  <a
-    href="https://deltea.itch.io"
-    target="_blank"
-    class="hover:text-accent hover:underline"
-  >
-    itch.io
+    my portfolio
   </a>
 
-  <iconify-icon icon="streamline:flower-solid" class="text-base text-muted"></iconify-icon>
+  <div class="space-x-8 flex justify-center items-center border-3 border-muted rounded-full px-4 py-2">
+    <iconify-icon icon="streamline:flower-solid" class="text-base text-muted"></iconify-icon>
+
+    <a
+      href="/"
+      class="hover:text-accent hover:underline"
+    >
+      home
+    </a>
+
+    <a
+      href="https://github.com/deltea"
+      target="_blank"
+      class="hover:text-accent hover:underline"
+    >
+      github
+    </a>
+
+    <a
+      href="https://deltea.itch.io"
+      target="_blank"
+      class="hover:text-accent hover:underline"
+    >
+      itch.io
+    </a>
+
+    <iconify-icon icon="streamline:flower-solid" class="text-base text-muted"></iconify-icon>
+  </div>
 </nav>
