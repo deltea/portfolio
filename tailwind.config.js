@@ -8,12 +8,14 @@ export default {
         "foreground": "var(--color-foreground)",
         "background": "var(--color-background)",
         "muted": "var(--color-muted)",
+        "muted-text": "var(--color-muted-text)",
+        "secondary": "var(--color-secondary)",
       },
       borderWidth: {
         "3": "3px",
       },
       fontFamily: {
-        // "mono": ["Ubuntu Sans Mono Variable", "monospace"],
+        "ubuntu": ["Ubuntu Sans Mono Variable", "monospace"],
       }
     },
   },

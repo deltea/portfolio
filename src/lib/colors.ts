@@ -8,6 +8,8 @@ interface Palette {
     foreground: string;
     background: string;
     muted: string;
+    secondary: string;
+    mutedText: string;
   }
 }
 
@@ -18,7 +20,9 @@ export const palettes: Palette[] = [
       accent: "#dea0ae",
       foreground: "#cdd6f4",
       background: "#1e1e2e",
-      muted: "#313244"
+      muted: "#313244",
+      secondary: "#5c5f77",
+      mutedText: "#6c6f8c",
     }
   },
   {
@@ -27,7 +31,9 @@ export const palettes: Palette[] = [
       accent: "#f1d44b",
       foreground: "#cbcdc2",
       background: "#212233",
-      muted: "#2a2c3c"
+      muted: "#4b505f",
+      secondary: "#424558",
+      mutedText: "#6b6c87",
     }
   },
   {
@@ -36,27 +42,22 @@ export const palettes: Palette[] = [
       accent: "#e1bdba",
       foreground: "#e0def4",
       background: "#191724",
-      muted: "#26233a"
+      muted: "#26233a",
+      secondary: "#6d6f9c",
+      mutedText: "#6e6a86",
     }
   },
   {
     name: "dracula",
     colors: {
-      accent: "#ff79c6",
-      foreground: "#f8f8f2",
-      background: "#262130",
-      muted: "#433658"
+      accent: "#ed70ce",
+      foreground: "#eaebe5",
+      background: "#292837",
+      muted: "#363548",
+      secondary: "#b47df4",
+      mutedText: "#625985",
     }
   },
-  {
-    name: "synthwave",
-    colors: {
-      accent: "#c759ac",
-      foreground: "#f7f7fb",
-      background: "#2b213a",
-      muted: "#3c3146"
-    }
-  }
 ];
 
 export const currentPalettte = writable<Palette>(palettes[0]);
@@ -67,4 +68,6 @@ currentPalettte.subscribe(newPalette => {
   document.documentElement.style.setProperty("--color-foreground", newPalette.colors.foreground);
   document.documentElement.style.setProperty("--color-background", newPalette.colors.background);
   document.documentElement.style.setProperty("--color-muted", newPalette.colors.muted);
+  document.documentElement.style.setProperty("--color-secondary", newPalette.colors.secondary);
+  document.documentElement.style.setProperty("--color-muted-text", newPalette.colors.mutedText);
 });
