@@ -71,6 +71,6 @@
 
   <iconify-icon
     icon={type === "game" ? "mdi:gamepad-variant" : "mdi:web"}
-    class="absolute -left-9 -top-9 -rotate-90 group-hover:-left-6 group-hover:-top-6 opacity-0 group-hover:opacity-100 group-hover:-rotate-45 bg-background rounded-full duration-200 text-[50px] p-3"
+    class="absolute -left-6 -top-6 lg:-left-9 lg:-top-9 -rotate-45 lg:-rotate-90 group-hover:-left-6 group-hover:-top-6 opacity-100 lg:opacity-0 group-hover:opacity-100 group-hover:-rotate-45 bg-background rounded-full duration-200 text-[50px] p-3"
   ></iconify-icon>
 </a>
