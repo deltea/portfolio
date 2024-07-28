@@ -6,8 +6,8 @@
     my portfolio
   </a>
 
-  <div class="space-x-8 flex justify-center items-center border-3 border-muted-text rounded-full px-4 py-2 bg-background">
-    <iconify-icon icon="streamline:flower-solid" class="text-base text-muted-text"></iconify-icon>
+  <div class="space-x-4 lg:space-x-8 flex justify-center items-center border-3 border-muted rounded-full px-4 py-2 bg-background">
+    <iconify-icon icon="streamline:flower-solid" class="text-base text-muted"></iconify-icon>
 
     <a
       href="/"
@@ -32,6 +32,6 @@
       itch.io
     </a>
 
-    <iconify-icon icon="streamline:flower-solid" class="text-base text-muted-text"></iconify-icon>
+    <iconify-icon icon="streamline:flower-solid" class="text-base text-muted"></iconify-icon>
   </div>
 </nav>

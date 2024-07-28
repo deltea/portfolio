@@ -7,15 +7,16 @@
   export let thumbnail: string;
   export let description = "this is a project card";
   export let tags: Tag[] = [];
+  export let type: "game" | "website";
 
-  type Tag = "game" | "unfinished" | "website";
+  type Tag = "jam game" | "unfinished" | "website";
 </script>
 
 <a
   href={url}
-  class="flex flex-col gap-4 p-6 border-3 border-muted hover:border-accent duration-100 rounded-xl w-full group bg-background"
+  class="flex flex-col gap-4 p-6 border-3 border-muted hover:border-accent duration-100 rounded-xl w-full group relative bg-background"
 >
-  <div class="flex justify-between items-center px-2">
+  <div class="flex justify-between items-center px-3 z-10">
     <div class="space-y-2">
       <a
         href={url}
@@ -29,7 +30,7 @@
           <div class={cn(
             "px-2 py-1 rounded-full text-xs inline-block",
             {
-              "bg-accent text-background": tag === "game",
+              "bg-accent text-background": tag === "jam game",
               "bg-secondary": tag === "unfinished",
               "bg-foreground text-background": tag === "website",
             }
@@ -42,7 +43,7 @@
       <p class="text-muted-text">{description}</p>
     </div>
 
-    <div class="flex items-center h-full gap-3 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 duration-100">
+    <div class="lg:flex items-center h-full gap-3 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 duration-100 hidden">
       <a
         href={github}
         class="text-muted hover:text-foreground duration-100 flex justify-center items-center"
@@ -67,4 +68,9 @@
     </div>
     <div class="absolute w-full h-full rounded-xl opacity-60 bg-muted z-10 top-0 left-0"></div>
   </div>
+
+  <iconify-icon
+    icon={type === "game" ? "mdi:gamepad-variant" : "mdi:web"}
+    class="absolute -left-9 -top-9 -rotate-90 group-hover:-left-6 group-hover:-top-6 opacity-0 group-hover:opacity-100 group-hover:-rotate-45 bg-background rounded-full duration-200 text-[50px] p-3"
+  ></iconify-icon>
 </a>

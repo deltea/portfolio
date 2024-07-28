@@ -60,7 +60,7 @@ export const palettes: Palette[] = [
   },
 ];
 
-export const currentPalettte = writable<Palette>(palettes[0]);
+export const currentPalettte = writable<Palette>(palettes[3]);
 currentPalettte.subscribe(newPalette => {
   if (!browser) return;
   console.log(newPalette);
