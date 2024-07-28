@@ -20,7 +20,7 @@
     type="game"
   />
   <ProjectCard
-    name="jiwjfkwaljsfdlkjkfmwl"
+    name="jiwj fkwalj sfdlkjkf mwasdf asdfas dfas fasfl"
     url="https://example.com"
     github="https://github.com"
     thumbnail="https://picsum.photos/1000/500?random=3"

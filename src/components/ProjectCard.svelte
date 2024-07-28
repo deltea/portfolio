@@ -16,16 +16,16 @@
   href={url}
   class="flex flex-col gap-4 p-6 border-3 border-muted hover:border-accent duration-100 rounded-xl w-full group relative bg-background"
 >
-  <div class="flex justify-between items-center px-3 z-10">
+  <div class="flex justify-between items-center lg:px-2.5 z-10">
     <div class="space-y-2">
       <a
         href={url}
-        class="text-2xl hover:text-accent hover:underline"
+        class="text-2xl hover:text-accent hover:underline text-wrap"
       >
         {name}
       </a>
 
-      <div class="space-x-2">
+      <div class="flex flex-wrap gap-2">
         {#each tags as tag}
           <div class={cn(
             "px-2 py-1 rounded-full text-xs inline-block",
