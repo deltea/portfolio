@@ -10,6 +10,7 @@
     thumbnail="https://picsum.photos/1000/500?random=1"
     tags={["jam game", "unfinished", "website"]}
     type="website"
+    icon="mdi:earth"
   />
   <ProjectCard
     name="the movie game"
@@ -18,14 +19,16 @@
     thumbnail="https://picsum.photos/1000/500?random=2"
     tags={["jam game", "unfinished", "website"]}
     type="game"
+    icon="mdi:movie-open"
   />
   <ProjectCard
-    name="jiwj fkwalj sfdlkjkf mwasdf asdfas dfas fasfl"
+    name="jiwj fkwalj sfdlkjkf"
     url="https://example.com"
     github="https://github.com"
     thumbnail="https://picsum.photos/1000/500?random=3"
     tags={["jam game", "unfinished", "website"]}
     type="website"
+    icon="mdi:test-tube"
   />
   <ProjectCard
     name="cool"
@@ -34,6 +37,7 @@
     thumbnail="https://picsum.photos/1000/500?random=4"
     tags={["jam game", "unfinished", "website"]}
     type="game"
+    icon="mdi:sunglasses"
   />
   <ProjectCard
     name="catalyst"
@@ -42,5 +46,6 @@
     thumbnail="https://picsum.photos/1000/500?random=5"
     tags={["jam game", "unfinished", "website"]}
     type="website"
+    icon="fa6-solid:gun"
   />
 </div>

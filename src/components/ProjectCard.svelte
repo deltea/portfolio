@@ -8,15 +8,16 @@
   export let description = "this is a project card";
   export let tags: Tag[] = [];
   export let type: "game" | "website";
+  export let icon = "";
 
   type Tag = "jam game" | "unfinished" | "website";
 </script>
 
 <a
   href={url}
-  class="flex flex-col gap-4 p-6 border-3 border-muted hover:border-accent duration-100 rounded-xl w-full group relative bg-background"
+  class="flex flex-col gap-4 p-6 border-3 border-muted hover:border-accent duration-100 rounded-xl w-full group relative bg-background overflow-hidden"
 >
-  <div class="flex justify-between items-center lg:px-2.5 z-10">
+  <div class="flex justify-between items-center lg:px-2 z-10">
     <div class="space-y-2">
       <a
         href={url}
@@ -43,7 +44,8 @@
       <p class="text-muted-text">{description}</p>
     </div>
 
-    <div class="lg:flex items-center h-full gap-3 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 duration-100 hidden">
+    <iconify-icon {icon} class="text-[4rem]"></iconify-icon>
+    <!-- <div class="lg:flex items-center h-full gap-3 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 duration-100 hidden">
       <a
         href={github}
         class="text-muted hover:text-foreground duration-100 flex justify-center items-center"
@@ -57,17 +59,13 @@
       >
         <iconify-icon icon="mdi:arrow-right-circle" class="text-4xl"></iconify-icon>
       </a>
-    </div>
+    </div> -->
   </div>
 
-  <div class="w-full h-full relative">
-    <div
-      class="bg-cover bg-center w-full h-40 rounded-xl grayscale"
-      style:background-image="url('{thumbnail}')"
-    >
-    </div>
-    <div class="absolute w-full h-full rounded-xl opacity-60 bg-muted z-10 top-0 left-0"></div>
-  </div>
+  <span class="size-2 rounded-full bg-muted absolute left-2 top-2"></span>
+  <span class="size-2 rounded-full bg-muted absolute right-2 top-2"></span>
+  <span class="size-2 rounded-full bg-muted absolute left-2 bottom-2"></span>
+  <span class="size-2 rounded-full bg-muted absolute right-2 bottom-2"></span>
 
   <iconify-icon
     icon={type === "game" ? "mdi:gamepad-variant" : "mdi:web"}
