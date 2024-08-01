@@ -2,50 +2,54 @@
   import ProjectCard from "$components/ProjectCard.svelte";
 </script>
 
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 place-items-center">
+<div class="grid grid-cols-1 lg:grid-cols-2 place-items-stretch gap-4 lg:gap-8">
   <ProjectCard
-    name="heloooooo world!"
-    url="https://example.com"
-    github="https://github.com"
-    thumbnail="https://picsum.photos/1000/500?random=1"
-    tags={["jam game", "unfinished", "website"]}
-    type="website"
-    icon="mdi:earth"
-  />
-  <ProjectCard
-    name="the movie game"
-    url="https://example.com"
-    github="https://github.com"
-    thumbnail="https://picsum.photos/1000/500?random=2"
-    tags={["jam game", "unfinished", "website"]}
     type="game"
-    icon="mdi:movie-open"
+    name="power cut"
+    icon="mdi:lightning-bolt"
+    url="https://example.com"
+    tags={["jam game"]}
   />
   <ProjectCard
-    name="jiwj fkwalj sfdlkjkf"
-    url="https://example.com"
-    github="https://github.com"
-    thumbnail="https://picsum.photos/1000/500?random=3"
-    tags={["jam game", "unfinished", "website"]}
-    type="website"
-    icon="mdi:test-tube"
-  />
-  <ProjectCard
-    name="cool"
-    url="https://example.com"
-    github="https://github.com"
-    thumbnail="https://picsum.photos/1000/500?random=4"
-    tags={["jam game", "unfinished", "website"]}
     type="game"
-    icon="mdi:sunglasses"
-  />
-  <ProjectCard
     name="catalyst"
+    icon="mdi:leaf"
     url="https://example.com"
-    github="https://github.com"
-    thumbnail="https://picsum.photos/1000/500?random=5"
-    tags={["jam game", "unfinished", "website"]}
+    tags={["jam game"]}
+  />
+  <ProjectCard
     type="website"
-    icon="fa6-solid:gun"
+    name="the movie game"
+    icon="mdi:movie-open"
+    url="https://example.com"
+    tags={[]}
+  />
+  <ProjectCard
+    type="website"
+    name="atlas academy"
+    icon="mdi:earth"
+    url="https://example.com"
+    tags={["unfinished"]}
+  />
+  <ProjectCard
+    type="game"
+    name="jetcat"
+    icon="mdi:cat"
+    url="https://example.com"
+    tags={["jam game"]}
+  />
+  <ProjectCard
+    type="game"
+    name="grapple"
+    icon="mdi:hook"
+    url="https://example.com"
+    tags={["jam game"]}
+  />
+  <ProjectCard
+    type="website"
+    name="youguess"
+    icon="mdi:youtube"
+    url="https://example.com"
+    tags={[]}
   />
 </div>

@@ -3,14 +3,12 @@
 
   export let name: string;
   export let url: string;
-  export let github: string;
-  export let thumbnail: string;
   export let description = "this is a project card";
   export let tags: Tag[] = [];
   export let type: "game" | "website";
   export let icon = "";
 
-  type Tag = "jam game" | "unfinished" | "website";
+  type Tag = "jam game" | "unfinished";
 </script>
 
 <a
@@ -30,6 +28,8 @@
         <span>{name}</span>
       </a>
 
+      <p class="text-muted-text">{description}</p>
+
       <div class="flex flex-wrap gap-2">
         {#each tags as tag}
           <div class={cn(
@@ -37,15 +37,17 @@
             {
               "bg-accent text-background": tag === "jam game",
               "bg-secondary": tag === "unfinished",
-              "bg-foreground text-background": tag === "website",
+              // "bg-foreground text-background": tag === "website",
             }
           )}>
             {tag}
           </div>
         {/each}
-      </div>
 
-      <p class="text-muted-text">{description}</p>
+        {#if tags.length === 0}
+          <p>EMPTY</p>
+        {/if}
+      </div>
     </div>
 
     <iconify-icon {icon} class="text-[4rem] hidden lg:block"></iconify-icon>
