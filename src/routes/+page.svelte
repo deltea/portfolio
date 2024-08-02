@@ -7,49 +7,49 @@
     type="game"
     name="power cut"
     icon="mdi:lightning-bolt"
-    url="https://example.com"
+    url="https://deltea.itch.io/power-cut"
     tags={["jam game"]}
   />
   <ProjectCard
     type="game"
     name="catalyst"
     icon="mdi:leaf"
-    url="https://example.com"
+    url="https://deltea.itch.io/catalyst"
     tags={["jam game"]}
   />
   <ProjectCard
     type="website"
     name="the movie game"
     icon="mdi:movie-open"
-    url="https://example.com"
+    url="https://the-movie-game.vercel.app"
     tags={[]}
   />
   <ProjectCard
     type="website"
     name="atlas academy"
     icon="mdi:earth"
-    url="https://example.com"
+    url="https://atlasacademy.blog"
     tags={["unfinished"]}
   />
   <ProjectCard
     type="game"
     name="jetcat"
     icon="mdi:cat"
-    url="https://example.com"
+    url="https://deltea.itch.io/jetcat"
     tags={["jam game"]}
   />
   <ProjectCard
     type="game"
     name="grapple"
     icon="mdi:hook"
-    url="https://example.com"
+    url="https://deltea.itch.io/grapple"
     tags={["jam game"]}
   />
   <ProjectCard
     type="website"
     name="youguess"
     icon="mdi:youtube"
-    url="https://example.com"
+    url="https://youguess.vercel.app"
     tags={[]}
   />
 </div>
