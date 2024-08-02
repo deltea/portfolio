@@ -16,6 +16,9 @@ export default {
       },
       fontFamily: {
         "ubuntu": ["Ubuntu Sans Mono Variable", "monospace"],
+      },
+      height: {
+        "screen": "100dvh",
       }
     },
   },
